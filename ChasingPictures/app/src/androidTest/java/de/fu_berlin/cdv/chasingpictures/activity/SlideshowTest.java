@@ -3,10 +3,6 @@ package de.fu_berlin.cdv.chasingpictures.activity;
 import android.content.Intent;
 import android.test.ActivityInstrumentationTestCase2;
 
-import java.util.List;
-
-import de.fu_berlin.cdv.chasingpictures.DebugUtilities;
-import de.fu_berlin.cdv.chasingpictures.api.Picture;
 import de.fu_berlin.cdv.chasingpictures.api.Place;
 
 /**
