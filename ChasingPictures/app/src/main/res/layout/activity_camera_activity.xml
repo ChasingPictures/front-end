@@ -8,7 +8,7 @@
         android:id="@+id/camera_preview"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        tools:visibility="gone"
+        tools:background="#66bf5a16"
         >
 
     </FrameLayout>

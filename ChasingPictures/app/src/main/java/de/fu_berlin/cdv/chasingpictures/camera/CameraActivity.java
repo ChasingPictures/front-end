@@ -12,9 +12,9 @@ import android.support.annotation.DrawableRes;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -51,6 +51,7 @@ public class CameraActivity extends Activity {
     private ImageView buttonFlash;
     private boolean viewingPhoto;
     private FlashMode flashMode = FlashMode.OFF;
+    private WireframeView wireframeView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,9 +98,14 @@ public class CameraActivity extends Activity {
         //endregion
 
         // Create our Preview view and set it as the content of our activity.
-        mPreview = new CameraPreview(this, mCamera, BitmapFactory.decodeResource(getResources(), R.drawable.wireframe_rathaus));
-        FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview);
+        mPreview = new CameraPreview(this, mCamera);
+        // TODO: Use wireframe of the place we are searching for
+        wireframeView = new WireframeView(this, BitmapFactory.decodeResource(getResources(), R.drawable.wireframe_rathaus));
+
+        // Add preview and wireframe to the activity
+        ViewGroup preview = (ViewGroup) findViewById(R.id.camera_preview);
         preview.addView(mPreview);
+        preview.addView(wireframeView);
     }
 
     @Override

@@ -5,12 +5,8 @@ package de.fu_berlin.cdv.chasingpictures.camera;
  */
 
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.graphics.Canvas;
-import android.graphics.Matrix;
-import android.graphics.RectF;
 import android.hardware.Camera;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -21,21 +17,10 @@ import java.io.IOException;
 public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback {
     private SurfaceHolder mHolder;
     private Camera mCamera;
-    private final Bitmap wireframe;
-    private final Matrix wireframeMatrix;
 
-    public CameraPreview(Context context, Camera camera, Bitmap wireframe) {
+    public CameraPreview(Context context, Camera camera) {
         super(context);
         mCamera = camera;
-        this.wireframe = wireframe;
-
-        RectF src = new RectF(0, 0, wireframe.getWidth(), wireframe.getHeight());
-
-        DisplayMetrics metrics = getResources().getDisplayMetrics();
-        RectF dst = new RectF(0, 0, metrics.widthPixels, metrics.heightPixels);
-
-        wireframeMatrix = new Matrix();
-        wireframeMatrix.setRectToRect(src, dst, Matrix.ScaleToFit.CENTER);
 
         // Install a SurfaceHolder.Callback so we get notified when the
         // underlying surface is created and destroyed.
@@ -86,14 +71,5 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         } catch (Exception e){
             Log.d("CP", "Error starting camera preview: " + e.getMessage());
         }
-    }
-
-    @Override
-    protected void onDraw(Canvas canvas) {
-        super.onDraw(canvas);
-
-        // does not work yet...
-        // canvas.drawBitmap(wireframe, wireframeMatrix, null);
-        canvas.drawBitmap(wireframe, 0, 0, null);
     }
 }

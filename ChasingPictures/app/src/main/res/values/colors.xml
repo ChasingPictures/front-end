@@ -9,7 +9,6 @@
     <color name="main_90">#e6bf5a16</color>
     <color name="main_85">#d8bf5a16</color>
     <color name="main_70">#b2bf5a16</color>
-    <color name="base_color">#bd0303</color>
     <color name="overlay_button">#c0878786</color>
     <color name="mapbox_attribution_background">#88ffffff</color>
     <color name="overlay_button_pressed">#b2000000</color>
