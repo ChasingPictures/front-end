@@ -5,7 +5,6 @@ package de.fu_berlin.cdv.chasingpictures.camera;
  */
 
 import android.content.Context;
-import android.graphics.Canvas;
 import android.hardware.Camera;
 import android.util.Log;
 import android.view.SurfaceHolder;
