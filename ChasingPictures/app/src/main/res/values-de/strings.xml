@@ -25,4 +25,48 @@
     <string name="chase_picture">chase picture</string>
     <string name="title_activity_menu">Menu</string>
     <string name="title_activity_slideshow">Slideshow</string>
+
+    <!-- Imprint, when translating, please adjust the links to the licenses to a version in the target language (if available) -->
+    <string name="imprint_title">Impressum</string>
+    <string name="imprint_text_start">Die App Chasing Pictures ist eine Idee und Entwicklung von Katharina Stärck, Miriam Wieseke, Jakob Warkotsch und Simon Kalt.</string>
+    <string name="imprint_title_license">Lizenz</string>
+    <string name="imprint_text_license"><![CDATA[
+Der gesamte Quellcode und alle Designelemente stehen unter der
+<a href="https://github.com/ChasingPictures/front-end/blob/master/LICENSE.md">MIT Lizenz</a>. Der Code für
+<a href="https://github.com/kaltsimon/Chasing-Pictures-front-end">diese App</a> und das
+<a href="https://github.com/kaltsimon/Chasing-Pictures-back-end">Server Backend</a> stehen auf GitHub zur Verfügung.
+]]></string>
+    <string name="imprint_title_libraries">Bibliotheken</string>
+    <string name="imprint_text_libraries"><![CDATA[
+Dieses Programm verwendet die folgenden Bibliotheken, welche alle unter der <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> stehen:
+]]></string>
+    <string name="imprint_title_photos_stadtmuseum">Bilder</string>
+    <string name="imprint_text_photos_stadtmuseum"><![CDATA[
+Die Stadtansichten welche den Startpunkt eines jeden Ortes darstellen, wurden
+vom <a href="http://www.stadtmuseum.de/">Stadtmuseum Berlin</a> bereitgestellt und sind auf
+<a href="https://commons.wikimedia.org/wiki/Category:Stadtansichten_(Stiftung_Stadtmuseum_Berlin)">Wikimedia Commons</a>
+<a href="https://creativecommons.org/publicdomain/mark/1.0/deed.de">gemeinfrei</a> verfügbar.
+]]></string>
+    <string name="imprint_title_photos_user">Nutzerfotos</string>
+    <string name="imprint_text_photos_user"><![CDATA[
+Von Nutzern hochgeladene Fotos in diesem Programm stehen unter einer
+<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative Commons Attribution-ShareAlike 4.0</a> Lizenz.
+Wenn sie mit diesem Programm ein Foto hochladen (dies geschieht, wenn sie ein Foto im Kamerabildschirm akzeptieren),
+stimmen sie zu, das Foto unter dieser Lizenz zu veröffentlichen. Das Foto wird in der App mit ihrem Namen attributiert.
+]]></string>
+    <string-array name="imprint_libraries">
+        <item>
+            <![CDATA[<a href=\"http://projects.spring.io/spring-android/\">Spring for Android</a> um mit dem REST Backend zu kommunizieren.]]>
+        </item>
+        <item>
+            <![CDATA[<a href=\"https://github.com/FasterXML\">Jackson</a> um JSON zu (de-)serialisieren.]]>
+        </item>
+        <item>
+            <![CDATA[Das <a href=\"https://www.mapbox.com/mapbox-android-sdk/\">Mapbox Android SDK</a> um hübsche Maps vom Service <a href=\"https://www.mapbox.com/\">Mapbox</a> darzustellen.]]>
+        </item>
+        <item>
+            <![CDATA[<a href=\"https://github.com/shamanland/xdroid\">Xdroid</a> um überall einfach Toast zubereiten zu können ;).]]>
+        </item>
+    </string-array>
+    <!-- /Imprint -->
 </resources>

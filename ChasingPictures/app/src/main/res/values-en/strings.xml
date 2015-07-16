@@ -25,4 +25,41 @@
     <string name="chase_picture">chase picture</string>
     <string name="title_activity_slideshow">Slideshow</string>
     <string name="title_activity_menu">Menu</string>
+    <!-- Imprint, when translating, please adjust the links to the licenses to a version in the target language (if available) -->
+    <string name="imprint_title">Imprint</string>
+    <string name="imprint_text_start">The application Chasing Pictures was developed by Katharina Stärck, Miriam Wieseke, Jakob Warkotsch and Simon Kalt.</string>
+    <string name="imprint_title_license">License</string>
+    <string name="imprint_text_license"><![CDATA[
+All code and design elements are released under the <a href="https://github.com/ChasingPictures/front-end/blob/master/LICENSE.md">MIT License</a>. The code for
+<a href="https://github.com/kaltsimon/Chasing-Pictures-front-end">this app</a> and the
+<a href="https://github.com/kaltsimon/Chasing-Pictures-back-end">server back end</a> is available on GitHub.
+]]></string>
+    <string name="imprint_title_libraries">Libraries</string>
+    <string name="imprint_text_libraries"><![CDATA[
+This application uses the following libraries, which are all released under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>:
+]]>
+    </string>
+    <string name="imprint_title_photos_stadtmuseum">Images</string>
+    <string name="imprint_text_photos_stadtmuseum"><![CDATA[
+The images displaying the city views of Berlin are provided by the
+<a href="http://www.stadtmuseum.de/">Stadtmuseum Berlin</a> and are available on
+<a href="https://commons.wikimedia.org/wiki/Category:Stadtansichten_(Stiftung_Stadtmuseum_Berlin)">Wikimedia Commons</a>
+under <a href="https://creativecommons.org/publicdomain/mark/1.0/deed.en">public domain</a>.
+]]>
+    </string>
+    <string name="imprint_title_photos_user">User Photos</string>
+    <string name="imprint_text_photos_user"><![CDATA[
+Photos uploaded by the users of this application are licensed under a
+<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0</a> license.
+By uploading a photo through this application (this happens automatically when you accept a photo in the camera view after taking it),
+you agree to release the photo under this license. The photo will be attributed to you by your chosen username.
+]]>
+    </string>
+    <string-array name="imprint_libraries">
+        <item><![CDATA[<a href=\"http://projects.spring.io/spring-android/\">Spring for Android</a> for connecting to the REST back end.]]></item>
+        <item><![CDATA[<a href=\"https://github.com/FasterXML\">Jackson</a> for (de-)serializing JSON]]></item>
+        <item><![CDATA[The <a href=\"https://www.mapbox.com/mapbox-android-sdk/\">Mapbox Android SDK</a> for displaying pretty maps using the <a href=\"https://www.mapbox.com/\">Mapbox</a> service.]]></item>
+        <item><![CDATA[<a href=\"https://github.com/shamanland/xdroid\">Xdroid</a> for simple toasting from anywhere]]></item>
+    </string-array>
+    <!-- /Imprint -->
 </resources>

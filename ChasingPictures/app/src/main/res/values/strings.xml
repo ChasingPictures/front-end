@@ -30,12 +30,12 @@
     <string name="mapbox_logo_desc" translatable="false">Mapbox</string>
     <!-- Imprint, when translating, please adjust the links to the licenses to a version in the target language (if available) -->
     <string name="imprint_title">Imprint</string>
-    <string name="imprint_text_start">The application ChasingPictures was developed by Katharina Stärck, Miriam Wieseke, Jakob Warkotsch and Simon Kalt.</string>
+    <string name="imprint_text_start">The application Chasing Pictures was developed by Katharina Stärck, Miriam Wieseke, Jakob Warkotsch and Simon Kalt.</string>
     <string name="imprint_title_license">License</string>
     <string name="imprint_text_license"><![CDATA[
-All code and design elements are released under the MIT License. The code for
+All code and design elements are released under the <a href="https://github.com/ChasingPictures/front-end/blob/master/LICENSE.md">MIT License</a>. The code for
 <a href="https://github.com/kaltsimon/Chasing-Pictures-front-end">this app</a> and the
-<a href="https://github.com/kaltsimon/Chasing-Pictures-back-end">server backend</a> is available on GitHub.
+<a href="https://github.com/kaltsimon/Chasing-Pictures-back-end">server back end</a> is available on GitHub.
 ]]></string>
     <string name="imprint_title_libraries">Libraries</string>
     <string name="imprint_text_libraries"><![CDATA[
