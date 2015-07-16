@@ -177,4 +177,12 @@ public class Menu extends Activity {
             mPlaceDistance.setText(String.format("%d m", round));
         }
     }
+
+    /**
+     * When user clicks on the profile icon.
+     * For now, go to the imprint page.
+     */
+    public void meButtonClick(View view) {
+        startActivity(new Intent(this, Imprint.class));
+    }
 }

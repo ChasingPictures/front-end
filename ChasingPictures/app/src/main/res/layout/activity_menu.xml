@@ -122,6 +122,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/me_button"
                 android:scaleType="centerInside"
+                android:onClick="meButtonClick"
                 />
         </RelativeLayout>
 
