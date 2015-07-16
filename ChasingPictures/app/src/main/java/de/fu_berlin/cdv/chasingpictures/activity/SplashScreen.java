@@ -8,7 +8,6 @@ import android.view.MotionEvent;
 import android.widget.ImageView;
 
 import de.fu_berlin.cdv.chasingpictures.LoginPage;
-import de.fu_berlin.cdv.chasingpictures.MainActivity;
 import de.fu_berlin.cdv.chasingpictures.Menu;
 import de.fu_berlin.cdv.chasingpictures.R;
 import de.fu_berlin.cdv.chasingpictures.security.Access;
@@ -29,9 +28,9 @@ public class SplashScreen extends Activity {
 
             if (!Access.hasAccess(getApplicationContext())) {
                 Intent intent = new Intent(getApplicationContext(), LoginPage.class);
-                startActivityForResult(intent, MainActivity.REQUEST_LOGIN_REGISTER);
+                startActivityForResult(intent, Menu.REQUEST_LOGIN_REGISTER);
             } else {
-                onActivityResult(MainActivity.REQUEST_LOGIN_REGISTER, RESULT_OK, null);
+                onActivityResult(Menu.REQUEST_LOGIN_REGISTER, RESULT_OK, null);
             }
         }
     });
@@ -39,7 +38,7 @@ public class SplashScreen extends Activity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == MainActivity.REQUEST_LOGIN_REGISTER && resultCode == RESULT_OK) {
+        if (requestCode == Menu.REQUEST_LOGIN_REGISTER && resultCode == RESULT_OK) {
             finish();
             Intent intent = new Intent(getApplicationContext(), Menu.class);
             startActivity(intent);

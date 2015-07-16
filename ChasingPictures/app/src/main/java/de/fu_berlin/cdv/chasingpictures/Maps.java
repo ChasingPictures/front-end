@@ -44,7 +44,7 @@ public class Maps extends Activity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(getApplicationContext(), CameraActivity.class);
-            startActivityForResult(intent, MainActivity.REQUEST_TAKE_PICTURE);
+            startActivityForResult(intent, Menu.REQUEST_TAKE_PICTURE);
         }
     };
     private com.mapbox.mapboxsdk.geometry.LatLng startingPoint = new LatLng(51f, 0f);
@@ -136,7 +136,7 @@ public class Maps extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
-            case MainActivity.REQUEST_TAKE_PICTURE:
+            case Menu.REQUEST_TAKE_PICTURE:
                 if (resultCode == RESULT_OK) {
                     // TODO: Maybe put upload in slideshow or separate activity?
                     final File imageFile = (File) data.getSerializableExtra(CameraActivity.EXTRA_IMAGE_FILE);

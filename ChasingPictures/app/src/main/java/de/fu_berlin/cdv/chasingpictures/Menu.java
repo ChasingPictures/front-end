@@ -34,6 +34,8 @@ public class Menu extends Activity {
 
     public static final Location BERLIN = new Location(LocationManager.PASSIVE_PROVIDER);
     public static final ColorMatrixColorFilter GRAYSCALE_FILTER;
+    public static final int REQUEST_LOGIN_REGISTER = 1;
+    public static final int REQUEST_TAKE_PICTURE = 2;
     public static final int REQUEST_PICTURE_SELECTION = 3;
     public static final int SLIDESHOW_REQUEST_SHOW_ONCE = 4;
     public static final int MAPS_REQUEST_SEARCH = 5;

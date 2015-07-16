@@ -25,7 +25,7 @@ public class LoginPage extends Activity {
      */
     public void showLoginForm(View view) {
         Intent intent = new Intent(this, LoginForm.class);
-        startActivityForResult(intent, MainActivity.REQUEST_LOGIN_REGISTER);
+        startActivityForResult(intent, Menu.REQUEST_LOGIN_REGISTER);
     }
 
     /**
@@ -33,7 +33,7 @@ public class LoginPage extends Activity {
      */
     public void showRegisterForm(View view) {
         Intent intent = new Intent(this, Register.class);
-        startActivityForResult(intent, MainActivity.REQUEST_LOGIN_REGISTER);
+        startActivityForResult(intent, Menu.REQUEST_LOGIN_REGISTER);
     }
 
     @Override
