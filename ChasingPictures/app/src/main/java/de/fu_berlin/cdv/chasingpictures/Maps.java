@@ -33,7 +33,7 @@ public class Maps extends Activity {
 
     public static final String EXTRA_PLACE = "de.fu_berlin.cdv.chasingpictures.EXTRA_PLACE";
     private static final String TAG = "MapActivity";
-    private static final float SHOW_CAMERA_DISTANCE = 5; // Show camera when less than 5 meters away
+    private int SHOW_CAMERA_DISTANCE; // Show camera when less than 5 meters away
     private final View.OnClickListener showHidePictureClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -83,6 +83,7 @@ public class Maps extends Activity {
 
         setContentView(R.layout.activity_maps);
 
+        SHOW_CAMERA_DISTANCE = getResources().getInteger(R.integer.show_camera_distance);
         distanceButton = ((Button) findViewById(R.id.buttonDistance));
         mapView =  (MapView) this.findViewById(R.id.mapview);
 
