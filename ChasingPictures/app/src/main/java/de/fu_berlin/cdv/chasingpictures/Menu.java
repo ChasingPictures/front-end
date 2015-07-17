@@ -23,6 +23,7 @@ import java.util.List;
 import de.fu_berlin.cdv.chasingpictures.api.LocationTask;
 import de.fu_berlin.cdv.chasingpictures.api.Picture;
 import de.fu_berlin.cdv.chasingpictures.api.Place;
+import de.fu_berlin.cdv.chasingpictures.camera.CameraActivity;
 import de.fu_berlin.cdv.chasingpictures.location.EasyLocationListener;
 import de.fu_berlin.cdv.chasingpictures.location.LocationHelper;
 
@@ -186,5 +187,12 @@ public class Menu extends Activity {
      */
     public void meButtonClick(View view) {
         startActivity(new Intent(this, Imprint.class));
+    }
+
+    /**
+     * Go to camera.
+     */
+    public void goToCamera(View view) {
+        startActivity(new Intent(this, CameraActivity.class));
     }
 }

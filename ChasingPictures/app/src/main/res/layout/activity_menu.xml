@@ -114,15 +114,27 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/menu.button.width"
             android:background="@drawable/menu_bar"
-            android:gravity="end"
-            android:layout_alignParentBottom="true"
-            android:padding="@dimen/menu.bar.padding">
+            android:layout_alignParentBottom="true">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/overlay_button_text"
+                android:text="+"
+                android:onClick="goToCamera"
+                android:background="@android:color/transparent"
+                android:paddingTop="0dp"
+                />
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:src="@drawable/me_button"
                 android:scaleType="centerInside"
                 android:onClick="meButtonClick"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/menu.bar.padding"
                 />
         </RelativeLayout>
 
