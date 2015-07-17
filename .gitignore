@@ -25,3 +25,6 @@ proguard/
 
 # Log Files
 *.log
+
+# Ignore API URL
+/ChasingPictures/app/src/main/res/values/api_url.xml

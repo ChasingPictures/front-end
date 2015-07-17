@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="api.url" translatable="false">http://10.0.2.2:3000/</string>
     <string name="api.path.login" translatable="false">auth/sign_in</string>
     <string name="api.path.register" translatable="false">auth</string>
     <string name="api.path.location_request" translatable="false">places/find?latitude={latitude}&amp;longitude={longitude}</string>
